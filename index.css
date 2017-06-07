@@ -1,0 +1,33 @@
+h1 {
+    text-align:left;
+    font-family:   Vivaldi, cursive;
+    border: 3px solid #424242;
+    border-radius: 10px;
+    margin: 10px 500px 10px 300px;
+    background-color: #616161;
+    padding: 2px;
+    box-shadow: 5px 5px #212121;
+    color:white;
+}
+h3 { 
+    text-align: left;
+    font-family: Vivaldi, cursive;
+    border: 2px solid #424242;
+    border-radius:10px;
+    margin:10px 500px 10px 300px;
+    background-color:#616161;
+    padding: 2px 2px 2px 7px;
+    box-shadow: 5px 5px #212121;
+    color:white;
+
+}
+body {
+    background-image: url("http://arisegaming.files.wordpress.com/2013/05/website-background-2-1.jpg");
+
+}
+form > p:first-child {
+    display: inline-block;
+}
+form > p:nth-child(2) {
+    display: inline-block;
+}
