@@ -12,13 +12,14 @@ function handleSubmit(ev){
     const f = ev.target
     const listSection = document.querySelector('#listSection')
     const celebName = f.celebChoice.value
+    debugger
     listSection.appendChild(makeList(celebName))
 }
 
 //create function to make list item
 function makeListItem(value){
     const item = document.createElement('li')
-    item.textContent = value
+    item.innerHTML =`${value}`
     return item
 }
 
@@ -29,3 +30,5 @@ function makeList(cName){
     list.appendChild(item)
     return list
 }
+
+celebForm.addEventListener('submit', handleSubmit)
