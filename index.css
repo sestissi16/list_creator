@@ -32,6 +32,7 @@ form > p:first-child {
     height:44px;
     border:2px solid #424242;
     box-shadow: 5px 5px #212121;
+    background-color: #9E9E9E;
     
 }
 form > p:nth-child(2) {
@@ -61,10 +62,19 @@ section div ul li {
     margin:-15px 0px 0px 0px;
     display: inline-block;
 }
-section div ul li input {
+section div ul li input:first-child {
     height: 25px;
     width: 40px;
     margin: 1px 2px 1px 20px;
     border:1px solid whitesmoke;
-
+    padding: 1px;
+    display: inline-block;
+}
+section div ul li input:nth-child(2) {
+    height:25px;
+    width:40px;
+    margin:1px 2px 1px 4px;
+    border:1px solid whitesmoke;
+    padding:1px;
+    display: inline-block;
 }

@@ -23,7 +23,7 @@ function makeListItem(value){
     //add buttons to the list item
     const favButton = document.createElement('input')
     //create attribute for button so that I can differentiate buttons in the future
-    favButton.value = "Fav"
+    favButton.value = 'Fav'
     const typeAtt = document.createAttribute('type')
     typeAtt.value = 'button'
     favButton.setAttributeNode(typeAtt)
@@ -34,7 +34,14 @@ function makeListItem(value){
     doubleClickAtt.value = "this.parentElement.style.backgroundColor = '#FFFFFF'"
     favButton.setAttributeNode(doubleClickAtt)
     //favButton.style.backgroundImage = 'url(http://weknownyourdreamz.com/images/star/star-02.jpg)'
+    //const delButton = document.createElement('input')
+    //delButton.value = 'Delete'
+    //delButton.setAttributeNode(typeAtt)
+    //const delClickAtt = document.createAttribute('onclick')
+    //delClickAtt.value = "this.parentElement.remove()"
+    //delButton.setAttributeNode(delClickAtt)
     item.appendChild(favButton)
+    //item.appendChild(delButton)
     return item
 }
 
