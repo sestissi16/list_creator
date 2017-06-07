@@ -20,6 +20,10 @@ function handleSubmit(ev){
 function makeListItem(value){
     const item = document.createElement('li')
     item.innerHTML =`${value}`
+    //add buttons to the list item
+    const favButton = document.createElement('button')
+    favButton.innerHTML = `<img src="http://weknownyourdreamz.com/images/star/star-02.jpg">`
+    item.appendChild(favButton)
     return item
 }
 
