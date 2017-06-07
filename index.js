@@ -27,16 +27,14 @@ function makeListItem(value){
     typeAtt.value = 'button'
     favButton.setAttributeNode(typeAtt)
     const clickAtt = document.createAttribute('onclick')
-    clickAtt.value.innerHTML = `${favButton_click()}`
+    clickAtt.value = "this.parentElement.style.backgroundColor = '#FEEC49'"
     favButton.setAttributeNode(clickAtt)
-
-    favButton.innerHTML = `<img src="http://weknownyourdreamz.com/images/star/star-02.jpg">`
+    const doubleClickAtt = document.createAttribute('ondblclick')
+    doubleClickAtt.value = "this.parentElement.style.backgroundColor = '#FFFFFF'"
+    favButton.setAttributeNode(doubleClickAtt)
+    //favButton.style.backgroundImage = 'url(http://weknownyourdreamz.com/images/star/star-02.jpg)'
     item.appendChild(favButton)
     return item
-}
-//create a function for when the favorite button is clicked
-function favButton_click(){
-    document.body.section.div.ul.li
 }
 
 //create function to make the list
