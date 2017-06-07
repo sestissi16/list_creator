@@ -6,3 +6,9 @@ function createcelebObj(celebname){
     celebObj.name = celebname
 }
 
+//create function to handle the submit
+function handleSubmit(ev){
+    ev.preventDefault()
+    const f = ev.target
+    const listSection = document.querySelector('#listSection')
+}
