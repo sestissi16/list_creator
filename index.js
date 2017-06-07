@@ -23,6 +23,7 @@ function makeListItem(value){
     //add buttons to the list item
     const favButton = document.createElement('input')
     //create attribute for button so that I can differentiate buttons in the future
+    favButton.value = "Fav"
     const typeAtt = document.createAttribute('type')
     typeAtt.value = 'button'
     favButton.setAttributeNode(typeAtt)
