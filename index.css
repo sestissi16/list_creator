@@ -43,7 +43,19 @@ form > p:nth-child(2) {
     box-shadow: 5px 5px #212121;
     padding: 5px;
 }
-section > div {
+section > div:first-child {
     width: 80%;
     margin: 1rem auto;
+}
+section > div:nth-child(2) {
+    display: inline-block;
+    margin: 20px 100px 20px 700px;
+}
+section div ul li {
+    border:1px solid #9E9E9E;
+    border-radius: 2px;
+    background-color: whitesmoke;
+    box-shadow: -5px 2px #212121;
+    padding: 5px;
+    width: 300px;
 }
