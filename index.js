@@ -12,6 +12,7 @@ function handleSubmit(ev){
     const f = ev.target
     const listSection = document.querySelector('#listSection')
     const celebName = f.celebChoice.value
+    //prepend function to add things to top of list
     const madeList = makeList(celebName)
     listSection.insertBefore(madeList, listSection.firstChild)
 }
