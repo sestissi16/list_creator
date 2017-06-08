@@ -34,14 +34,16 @@ function makeListItem(value){
     doubleClickAtt.value = "this.parentElement.style.backgroundColor = '#FFFFFF'"
     favButton.setAttributeNode(doubleClickAtt)
     //favButton.style.backgroundImage = 'url(http://weknownyourdreamz.com/images/star/star-02.jpg)'
-    //const delButton = document.createElement('input')
-    //delButton.value = 'Delete'
-    //delButton.setAttributeNode(typeAtt)
-    //const delClickAtt = document.createAttribute('onclick')
-    //delClickAtt.value = "this.parentElement.remove()"
-    //delButton.setAttributeNode(delClickAtt)
+    const delButton = document.createElement('input')
+    delButton.value = 'Del'
+    const delTypeAtt = document.createAttribute('type')
+    delTypeAtt.value = 'button'
+    delButton.setAttributeNode(delTypeAtt)
+    const delClickAtt = document.createAttribute('onclick')
+    delClickAtt.value = "this.parentElement.remove()"
+    delButton.setAttributeNode(delClickAtt)
     item.appendChild(favButton)
-    //item.appendChild(delButton)
+    item.appendChild(delButton)
     return item
 }
 
